@@ -19,3 +19,14 @@ npx cypress run --spec "C:\Users\IsmaelRubio\Downloads\PortalClient" // seleccci
 
 Para correr todos los tests de una carpeta, con asterisco al final, 
 npx cypress run --headed --spec "C:\Users\IsmaelRubio\OneDrive - Mapal-OS\Documentos\Cypress_curso_2021\cypress\integration\Seccion_1\*"
+
+GIT
+
+git status
+git add .
+git add "fichero"
+git add *.js
+git commit 
+git commit -m "Nombre del commit"
+git checkout --.  /recuperar archivos
+
