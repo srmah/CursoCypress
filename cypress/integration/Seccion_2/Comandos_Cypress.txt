@@ -1,0 +1,22 @@
+--Lanzar Cypress con node con todos los test
+node_modules\.bin\cypress run
+
+
+--Con npx
+npx cypress run
+
+
+--Lanzarlos ejecutandose en el navegador --headed
+npx cypress run --headed
+
+
+--Eligiendo navegador
+npx cypress run --browser chrome
+
+--Correr 1 test solamente
+npx cypress run --spec "cypress\integration\Seccion_2\05_Asserts.js"
+
+
+--Correr 1 sección solamente
+npx cypress run --spec "cypress\integration\Seccion_2\*"
+

@@ -1,0 +1,21 @@
+1. npm init
+2. npm install cypress --save-dev -> Instalación de Cypress
+3. node_modules\.bin\cypress open -> anir Cypress
+4. abrir cypress node_modules\.bin\cypress open
+5. npx cypres open
+6. Evitar que un enlace se abra en otra ventana, utilizando la función invoke: cy.get('.eicon-close').invoke("removeAttr","target").click()
+7. Opciones de tiempo "pageLoadTimeout":9000 en cypress.json
+    defaultCommandTimeout -> tiempo de espera para la ejeccioón de comandos, o pasos
+    Cypress.config -> ejecutar configuraciones en un test Cypress.config("defaultCommandTimeout",15000)    
+    Timeout en should
+    cy.get('#select-demo').should("be.visible",{timeout:1000}).select("Friday").should("have.value","Friday")
+
+8. Ejecutar tests desde consola
+
+npx cypress run
+npx cypress run --headed // Para corrrerlos desde el navegador
+npx cypress run --browser chrome // seleccionando navegador
+npx cypress run --spec "C:\Users\IsmaelRubio\Downloads\PortalClient" // selecccionando una ruta
+
+Para correr todos los tests de una carpeta, con asterisco al final, 
+npx cypress run --headed --spec "C:\Users\IsmaelRubio\OneDrive - Mapal-OS\Documentos\Cypress_curso_2021\cypress\integration\Seccion_1\*"
