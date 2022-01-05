@@ -23,10 +23,22 @@ npx cypress run --headed --spec "C:\Users\IsmaelRubio\OneDrive - Mapal-OS\Docume
 GIT
 
 git status
+git status -s -b
 git add .
 git add "fichero"
 git add *.js
 git commit 
 git commit -m "Nombre del commit"
 git checkout --.  /recuperar archivos
+git log
+git log --oneline --decorate --all --graph
 
+
+git config --global alias.lg "log --oneline --decorate --all --graph"
+git lg
+
+git status 
+git reset --soft IDcommit  //restaurar punto sin borrar ficheros
+git reset --hard IDcommit  //restaurar punto borrando ficheros
+
+git reflog //línea de tiempo con ficheros
