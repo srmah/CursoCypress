@@ -42,3 +42,5 @@ git reset --soft IDcommit  //restaurar punto sin borrar ficheros
 git reset --hard IDcommit  //restaurar punto borrando ficheros
 
 git reflog //línea de tiempo con ficheros
+
+cypress run --record --key 9106c1ff-d734-4f93-9b76-2fd797ed6bee
